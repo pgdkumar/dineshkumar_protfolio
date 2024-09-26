@@ -226,7 +226,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .home .content h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #002057;
 }
@@ -336,7 +336,7 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
   }
   .home .image img {
-    margin-top: -12rem;
+    margin-top: 5px;
   }
   .home .content p {
     font-size: 2.2rem;
