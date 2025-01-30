@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            --backgroundbg: #0f1f39;
+            --cardbg: #010c1b;
+            --red: #ec365f;
+            --purple: #ae23bd;
+            --gradient: linear-gradient(to right, var(--red), var(--purple));
+            --glare: white;
+            --mainFont: "Oleo Script", serif;
+            --gradientCurve: 25%;
+        }
+
+        .app {
+            height: 100vh;
+            width: 100vw;
+            background: var(--backgroundbg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--mainFont);
+        }
+
+        .app-content {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* position: relative; */
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
+            background-image: var(--gradient);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .instagram-icon-parent {
+            height: 400px;
+            width: 400px;
+            /* border: 2px solid green; */
+            /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; */
+            /* padding: 1rem; */
+            /* background: var(--cardbg); */
+            /* border-radius: 17.5%; */
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        .card-content-parent {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        .instagram-icon-parent::before {
+            position: absolute;
+            content: "";
+            width: 125%;
+            left: -12.5%;
+            background: black;
+            height: 20px;
+            bottom: 0;
+            border-radius: 50%;
+            filter: blur(12.5px);
+            opacity: 0;
+            animation: fadeinshadow 1s 0.5s forwards;
+        }
+
+        .instagram-icon-parent::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background: rgb(5, 10, 5);
+            height: 20px;
+            bottom: 0;
+            border-radius: 50%;
+            filter: blur(1.5px);
+            z-index: 2;
+            opacity: 0;
+            animation: fadeinshadow 1s 0.5s forwards;
+        }
+
+        @keyframes fadeinshadow {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .instagram-card {
+            background: var(--cardbg);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            width: 100%;
+            border-radius: var(--gradientCurve);
+            box-shadow: 2px 5px 15px black inset, 2px 5px 10px rgba(15, 10, 10, 0.5);
+            animation: riseigcard 1s forwards;
+            transform: translateY(100%);
+        }
+
+        @keyframes riseigcard {
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .instagram-icon {
+            /* border: 2px solid red; */
+            width: 250px;
+            height: 250px;
+            /* border: 2px solid red; */
+            border-radius: var(--gradientCurve);
+            background: var(--gradient);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 5px 10px var(--purple) inset, 0px 0px 15px var(--purple);
+            transform: scale(0);
+            animation: inflate 1s 1.5s cubic-bezier(0.175, 0.385, 0.82, 1.475) forwards;
+            /* background: linear-gradient(30deg, #f9ce34, #ee2a7b, #6228d7); */
+        }
+
+        @keyframes inflate {
+            50% {
+                transform: scaleX(0.25) scaleY(1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .instagram-icon-bg {
+            height: 200px;
+            width: 200px;
+            background: var(--cardbg);
+            border-radius: var(--gradientCurve);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .instagram-donut {
+            height: 125px;
+            width: 125px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-bg {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            background: var(--cardbg);
+        }
+
+        .ig-dot {
+            position: absolute;
+            right: 1.25rem;
+            top: 1.25rem;
+            border-radius: 50%;
+            background: var(--gradient);
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .top-shadow {
+            width: 275px;
+            height: 45px;
+            background: linear-gradient(white, transparent);
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            position: absolute;
+            top: 1.25rem;
+            filter: blur(12.5px);
+            opacity: 75%;
+            opacity: 0;
+            animation: fadeinshadow 1s 2s forwards;
+        }
+
+        .left-shadow {
+            position: absolute;
+            width: 15px;
+            height: 65%;
+            background: linear-gradient(to right, var(--red), transparent);
+            left: 1rem;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            filter: blur(10px);
+            opacity: 0;
+            animation: fadeinshadow 1s 2.25s forwards;
+        }
+
+        .right-shadow {
+            position: absolute;
+            width: 15px;
+            height: 65%;
+            background: linear-gradient(to left, var(--purple), transparent);
+            right: 1rem;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            filter: blur(10px);
+            opacity: 0;
+            animation: fadeinshadow 1s 2.5s forwards;
+        }
+
+        .shadow {
+            height: 65px;
+            width: 100%;
+            background: var(--gradient);
+            margin-top: 3rem;
+            filter: blur(35px);
+            opacity: 0;
+            animation: fadeinglowshadow 1s 1s forwards;
+        }
+
+        @keyframes fadeinglowshadow {
+            100% {
+                opacity: 50%;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+
+            .shadow,
+            .instagram-icon-parent {
+                transform: scale(0.65);
+            }
+
+            .shadow {
+                margin-top: -2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-content">
+            <h1>pgdkumar161@gmail.com</h1>
+            <div class="instagram-icon-parent">
+                <div class="card-content-parent">
+                    <div class="instagram-card">
+                        <div class="top-shadow"></div>
+                        <div class="left-shadow"></div>
+                        <div class="right-shadow"></div>
+                        <div class="instagram-icon">
+                            <div class="instagram-icon-bg">
+                                <div class="instagram-donut">
+                                    <div class="donut-bg"></div>
+                                </div>
+                                <div class="ig-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+</body>
+
+</html>
