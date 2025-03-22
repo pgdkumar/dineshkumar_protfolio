@@ -52,7 +52,8 @@
             </a>
             <div class="socials">
                 <ul class="social-icons">
-                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/dineshkumar-paruvaraj-41321a192/" target="_blank"><i
+                    <li><a class="linkedin" aria-label="LinkedIn"
+                            href="https://www.linkedin.com/in/dineshkumar-paruvaraj-41321a192/" target="_blank"><i
                                 class="fab fa-linkedin"></i></a></li>
                     <li><a class="github" aria-label="GitHub" href="https://github.com/pgdkumar" target="_blank"><i
                                 class="fab fa-github"></i></a>
@@ -117,59 +118,112 @@
     <!-- about section ends -->
 
     <!-- skills section starts -->
-    <section class="skills" id="skills">
-
+    <section class="skills" id="skills" style="padding: 50px 20px; text-align: center; background-color: #f9f9f9;">
         <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-        <div class="container">
-            <div class="row" id="skillsContainer">
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/html.png" class="icon-img" />
-                        <span>HTML</span>
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div class="row" id="skillsContainer"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; padding: 20px;">
+                <!-- HTML Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/html.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">HTML</span>
                     </div>
                 </div>
 
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/css.png" class="icon-img" />
-                        <span>CSS</span>
+                <!-- CSS Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/css.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">CSS</span>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/bootstrap.png" class="icon-img" />
-                        <span>Bootstrab</span>
+
+                <!-- Bootstrap Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/bootstrap.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">Bootstrap</span>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/javascript.png" class="icon-img" />
-                        <span>javascript</span>
+
+                <!-- JavaScript Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/javascript.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">JavaScript</span>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/react-js.png" class="icon-img" />
-                        <span>React JS</span>
+
+                <!-- React JS Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/react-js.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">React JS</span>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/mysql.png" class="icon-img" />
-                        <span>Mysql</span>
+
+                <!-- MySQL Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/mysql.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">MySQL</span>
                     </div>
                 </div>
-                <div class="bar">
-                    <div class="info">
-                        <img src="assets/images/icons/github.png" class="icon-img" />
-                        <span>GitHub</span>
+
+                <!-- GitHub Skill -->
+                <div class="bar"
+                    style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';">
+                    <div class="info" style="text-align: center;">
+                        <img src="assets/images/icons/github.png" class="icon-img"
+                            style="width: 60px; height: 60px; margin-bottom: 10px; animation: float 3s ease-in-out infinite;" />
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">GitHub</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Floating Animation -->
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
     <!-- skills section ends -->
 
     <!-- education section starts -->
@@ -255,7 +309,7 @@
             <div class="container right">
                 <div class="content">
                     <div class="tag">
-                        <h2>Why Digit   </h2>
+                        <h2>Why Digit </h2>
                         <p>Bangalore</p>
                     </div>
                     <div class="desc">
@@ -306,7 +360,8 @@
                 <p> <i class="fas fa-map-marked-alt"></i>Bangalore, India-560002</p>
                 <div class="share">
 
-                    <a href="https://www.linkedin.com/in/dineshkumar-paruvaraj-41321a192/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/dineshkumar-paruvaraj-41321a192/" class="fab fa-linkedin"
+                        aria-label="LinkedIn" target="_blank"></a>
                     <a href="" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
                     <a href="" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
                     <a href="" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
